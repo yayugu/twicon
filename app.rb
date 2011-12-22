@@ -17,7 +17,7 @@ get '/:id/:size' do |id, size|
     end
     n = "#{n}_#{size}.jpg"
     puts n
-    n
+    redirect n
   rescue
     halt 404
   end
